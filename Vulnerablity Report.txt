@@ -1,0 +1,85 @@
+# Vulnerability Assessment Report
+
+## Most Critical Vulnerabilities Identified
+
+---
+
+
+Finding 1: Unpatched Operating System Components
+Risk Level
+
+High
+
+Observation
+
+The assessment detected multiple missing security patches and system updates. These updates contain fixes for publicly disclosed vulnerabilities that may be actively exploited by attackers.
+
+Security Impact
+
+Systems running outdated software are vulnerable to known exploits, potentially allowing unauthorized access, privilege escalation, malware infection, or complete system compromise.
+
+Remediation
+Install all available operating system and security updates.
+Establish a routine patch management process.
+Enable automatic updates where appropriate.
+Verify successful patch deployment through periodic audits.
+Remediation Priority
+
+Critical – Immediate Action Required
+
+Finding 2: SSH Remote Access Exposure
+Risk Level
+
+Medium
+
+Observation
+
+Secure Shell (SSH) services were detected running on the system, allowing remote administrative access.
+
+Security Impact
+
+Improperly configured SSH services can become targets for brute-force attacks, credential theft, and unauthorized remote access attempts.
+
+Remediation
+Disable SSH if remote administration is unnecessary.
+Enforce strong password policies.
+Implement SSH key-based authentication.
+Restrict access to trusted IP addresses through firewall rules.
+Consider changing default SSH configurations where applicable.
+Remediation Priority
+
+High
+
+Finding 3: Insecure SSL/TLS Settings
+Risk Level
+
+Medium
+
+Observation
+
+The system supports outdated cryptographic protocols and/or weak encryption algorithms that no longer meet modern security standards.
+
+Security Impact
+
+Attackers may exploit weak encryption mechanisms to intercept, decrypt, or manipulate sensitive communications between systems.
+
+Remediation
+Disable legacy protocols such as SSLv2 and SSLv3.
+Configure TLS 1.2 or TLS 1.3 exclusively.
+Remove weak cipher suites.
+Regularly review SSL/TLS configurations against industry best practices.
+Remediation Priority
+
+Medium
+
+Risk Overview
+Security Finding                                	Risk Level	        Priority
+Unpatched Operating System Components             High	              Critical
+SSH Remote Access Exposure	                      Medium	            High
+Insecure SSL/TLS Settings	                        Medium            	Medium
+
+Conclusion:
+
+The vulnerability assessment identified multiple security concerns that could increase the attack surface of the system. The most significant issue is the absence of critical security updates, which should be addressed immediately. Strengthening remote access controls and modernizing encryption settings will further enhance the overall security posture and reduce the likelihood of successful cyber attacks.
+
+This version looks more like a real cybersecurity assessment report and will stand out better in an internship submission or academic project.
